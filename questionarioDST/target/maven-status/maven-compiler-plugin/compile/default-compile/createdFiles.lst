@@ -1,0 +1,13 @@
+com\example\questionario\model\User.class
+com\example\questionario\service\UserService.class
+com\example\questionario\rest\ApiUtil.class
+com\example\questionario\rest\UtenteApiDelegate.class
+com\example\questionario\repository\UserRepository.class
+com\example\questionario\mapper\UserMapperImpl.class
+com\example\questionario\QuestionarioApplication.class
+com\example\questionario\mapper\UserMapper.class
+com\example\questionario\rest\UtenteApiController$1.class
+com\example\questionario\rest\UtenteApiController.class
+com\example\questionario\rest\UtenteApi.class
+com\example\questionario\model\UserDTO.class
+com\example\questionario\rest\UtenteApi$1.class

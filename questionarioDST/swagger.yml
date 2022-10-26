@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: Questionario
+  version: 1.0.0
+
+paths:
+  /utente:
+    post:
+      summary: registrazione di un nuovo utente
+      operationId: saveUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDTO'
+
+      responses:
+        '200':
+          description: utente registrato
+
+    delete:
+      summary: elimina un utente
+      operationId: deleteUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDTO'
+      responses:
+        '200':
+          description: utente eliminato
+components:
+  schemas:
+    UserDTO:
+      type: object
+      properties:
+        id:
+          type: integer
+        username:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
